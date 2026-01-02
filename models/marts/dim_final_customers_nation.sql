@@ -8,7 +8,7 @@ select
 c.c_name as customer_name,
 c.c_custkey as ID,
 o.o_orderkey as order_id,
-o.o_orderstatus,
+{{ normalize_status('o.o_orderstatus')}} as order_status,
 {{round_price('o.o_totalprice')}} as rounded_total_prize,
 n.n_name as nation
 from {{ ref('stg_customers') }} c join

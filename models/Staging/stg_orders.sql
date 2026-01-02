@@ -4,4 +4,5 @@
     )
 }}
 
-select * from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders
+select * from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.orders 
+
